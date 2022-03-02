@@ -1,0 +1,47 @@
+/* _baseStyles.scss */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 125%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: $headingFont;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 0.7rem;
+}
+
+h3 {
+    // font-size: 1.75rem;
+}
+
+p {
+    font-family: $bodyFont;
+    font-size: 0.7rem;
+}
+
+a {
+    text-decoration: none;
+}
