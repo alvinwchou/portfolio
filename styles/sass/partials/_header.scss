@@ -1,2 +1,49 @@
 /* _header.scss */
 
+body {
+    background-color: $tertiary;
+}
+
+header {
+    * {border: 1px solid red}
+    // p {
+    //     display: inline-block;
+    // }
+    // .socials {
+    //     display: inline-block;
+    // }
+
+
+    // li {
+    //     display: none;
+    // }
+    // .textContainer {
+    //     width: 50%;
+    // }
+
+    .introduction {
+        background-color: purple;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        .wrapper {
+            // width: 100vw;
+            justify-content: space-between;
+        }
+        .textContainer {
+            width: 50%;
+        }
+        p {
+            margin-bottom: 1.7rem;
+        }
+        h1 span {
+            color: $primary;
+        }
+        .line {
+            width: 4.2rem;
+            height: 0.17rem;
+            background-color: $primary;
+            margin-top: 13vh;
+        }
+    }
+}

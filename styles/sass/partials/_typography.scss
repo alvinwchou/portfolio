@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.025em;
+    line-height: 2;
+}
+
+
+h1, h2, h3 {
+    color: $solidWhite;
+}
+
+h1 {
+    font-size: 3.55rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    width: 0;
+    position: relative;
+    top: 110px;
+    left: 20px;
+
+}
+
+h3 {
+    // font-size: 1.75rem;
+}
+
+p {
+    font-size: 0.6rem;
+    color: $solidWhite;
+    letter-spacing: 0.1em;
+}

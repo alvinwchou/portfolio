@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Alvin Chou</title>
 </head>
 <body>
     <header>
-        <div class="wrapper">
+        <!-- <nav>
             <p>logo</p>
-
             <div class="socials">
-                <p>twitter</p>
-                <p>one more</p>
-                <p>linkedin</p>
-                <p>github</p>
+                <i class="devicon-twitter-original"></i>
+                <i class="devicon-linkedin-plain"></i>
+                <i class="devicon-github-original"></i>
             </div>
-
+            <p class="burger">burger</p>
             <nav class="slideOutNav">
                 <ul>
                     <li><a href="">Introduction</a></li>
@@ -27,29 +26,35 @@
                     <li><a href="">Resume</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-            </nav><!-- END .slideOutNav -->
-        </div> <!-- END .wrapper END -->
+            </nav>
+        </nav> -->
 
-        <section class="introduction" id="introduction">
-            <div class="wrapper">
-                <h2>Introduction</h2>
 
-                <div class="hello">
-                    <div class="textcontainer">
-                        <h1><span>Hello</span> my name is Alvin.</h1>
-                        <p>I am a front-end web developer.</p>
+        <section class="introduction flexContainer" id="introduction">
+                <div class="wrapper flexContainer">
+                    <div class="title">
+                        <h2>Introduction</h2>
                     </div>
-                </div><!-- END .hello END -->
-
-                <nav class="sideNav">
-                </nav>
-            </div><!-- END .wrapper END -->
-        </section><!-- END .introduction END -->
+            
+                    <div class="innerWrapper">
+                        <div class="hello">
+                            <div class="textContainer">
+                                <p>Front-end web developer. </p>
+                                <h1><span>Hello</span> my name is Alvin.</h1>
+                                <!-- <div class="line"></div> -->
+                            </div>
+                        </div><!-- END .hello END -->
+                    </div><!-- END .innerWrapper END -->
+                    <nav class="sideNav">
+                        <p>nav</p>
+                    </nav>
+                </div>
+            </section><!-- END .introduction END -->
     </header>
 
     <main>
         <section class="whatIDo" id="whatIDo">
-            <div class="wrapper">
+            <div class="innerWrapper">
                 <h2>What I do</h2>
 
                 <div class="aboutMe">
@@ -67,11 +72,11 @@
 
                 <nav class="sideNav">
                 </nav>
-            </div><!-- END .wrapper END -->
+            </div><!-- END .innerWrapper END -->
         </section><!-- END .whatIDo -->
 
         <section class="myWorks" id="myWorks">
-            <div class="wrapper">
+            <div class="innerWrapper">
                 <h2>My Works</h2>
 
                 <div class="featured">
@@ -125,11 +130,11 @@
 
                 <nav class="sideNav">
                 </nav>
-            </div><!-- END .wrapper END -->
+            </div><!-- END .innerWrapper END -->
         </section><!-- END .myWorks -->
 
         <section class="resume" id="resume">
-            <div class="wrapper">
+            <div class="innerWrapper">
                 <h2>Resume</h2>
 
                 <div class="skills">
@@ -147,11 +152,11 @@
 
                 <nav class="sideNav">
                 </nav>
-            </div><!-- END .wrapper END -->
+            </div><!-- END .innerWrapper END -->
         </section><!-- END .resume END -->
 
         <section class="contact" id="contact">
-            <div class="wrapper">
+            <div class="innerWrapper">
                 <h2>Contact</h2>
 
                 <div class="getInTouch">
@@ -170,12 +175,12 @@
 
                 <nav class="sideNav">
                 </nav>
-            </div><!-- END .wrapper END -->
+            </div><!-- END .innerWrapper END -->
         </section><!-- END .contanct END -->
     </main>
 
     <footer>
-        <div class="wrapper">
+        <div class="innerWrapper">
             <p>&copy 2022</p>
         </div>
     </footer>

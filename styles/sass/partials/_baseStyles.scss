@@ -15,31 +15,29 @@ img {
 }
 
 .wrapper {
-    max-width: 1260px;
-    width: 90%;
+    width: 96%;
     margin: 0 auto;
+}
+
+.innerWrapper {
+    max-width: 1170px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flexContainer {
+    display: flex;
 }
 
 h1, h2, h3 {
     margin: 0;
-    font-family: $headingFont;
-}
-
-h1 {
-    font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 0.7rem;
-}
-
-h3 {
-    // font-size: 1.75rem;
-}
-
-p {
-    font-family: $bodyFont;
-    font-size: 0.7rem;
+    // transform-origin: bottom left;
+    // transform: translate(0%, 0%) rotate(-90deg)
+    // translateY(150px)
+    
 }
 
 a {
