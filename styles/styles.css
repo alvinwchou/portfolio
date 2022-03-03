@@ -269,6 +269,10 @@ p {
   letter-spacing: 0.1em;
 }
 
+a {
+  color: #7e7e7e;
+}
+
 i {
   color: #fff;
 }
@@ -339,8 +343,50 @@ h3 {
   padding: 0 15px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+/* nav.scss */
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navBar .wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navBar input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+.navBar label {
+  cursor: pointer;
+}
+
+.slideOutNav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+  background-color: #272727;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  left: -1000px;
 }
 
 /* _header.scss */
