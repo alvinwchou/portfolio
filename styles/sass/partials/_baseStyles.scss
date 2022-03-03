@@ -33,11 +33,21 @@ h1, h2, h3 {
     margin: 0;
 }
 
+h1, h2 {
+    text-transform: uppercase;
+}
+
 h2 {
-    // transform-origin: bottom left;
-    // transform: translate(0%, 0%) rotate(-90deg)
-    // translateY(150px)
-    
+    transform: rotate(-90deg);
+    width: 0;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    white-space: nowrap;
+}
+
+h3 {
+    padding: 0 15px;
 }
 
 a {

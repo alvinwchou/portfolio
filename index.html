@@ -13,9 +13,12 @@
         <!-- <nav>
             <p>logo</p>
             <div class="socials">
-                <i class="devicon-twitter-original"></i>
-                <i class="devicon-linkedin-plain"></i>
-                <i class="devicon-github-original"></i>
+                <i class="devicon-twitter-original" aria-hidden="true"></i>
+                <span class="sr-only">Link to Twitter</span>
+                <i class="devicon-linkedin-plain" aria-hidden="true"></i>
+                <span class="sr-only">Link to LinkedIn</span>
+                <i class="devicon-github-original" aria-hidden="true"></i>
+                <span class="sr-only">Link to GitHub</span>
             </div>
             <p class="burger">burger</p>
             <nav class="slideOutNav">
@@ -41,146 +44,232 @@
                             <div class="textContainer">
                                 <p>Front-end web developer. </p>
                                 <h1><span>Hello</span> my name is Alvin.</h1>
-                                <!-- <div class="line"></div> -->
+                                <div class="line"></div>
                             </div>
                         </div><!-- END .hello END -->
                     </div><!-- END .innerWrapper END -->
+
                     <nav class="sideNav">
                         <p>nav</p>
                     </nav>
-                </div>
+                </div><!-- END .wrapper END -->
             </section><!-- END .introduction END -->
     </header>
 
     <main>
-        <section class="whatIDo" id="whatIDo">
-            <div class="innerWrapper">
-                <h2>What I do</h2>
+        <section class="whatIDo flexContainer" id="whatIDo">
+            <div class="wrapper flexContainer">
+                <div class="title">
+                    <h2>What I do</h2>
+                </div>
+                
+                <div class="innerWrapper">
+                    <h3>about me</h3>
+                    <div class="aboutMe flexContainer">
+                        <div class="textContainer flexContainer">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam eius, labore commodi reprehenderit repudiandae sunt.</p>
+                            <br>
+                            <p>I am currently attending Juno College of Technology. At this time I obtained skills within HTML, CSS, and JavaScript. I will develop my skills in React and Firebase with Juno.</p>
+                            <br>
+                            <p>Prior to attending Juno, I was in hospitality where my values of helping others and creating and maintaining relationships helped me work my way from a server to a manager. Throughout my time in hospitality, I honed my skills in teamwork, leadership, and people skills. I am looking forward to further developing my career in web development</p>
+                        </div>
 
-                <div class="aboutMe">
-                    <div class="textContainer">
-                        <h3>About me</h3>
-                        <p>My missis is to develop the best websites around</p>
-                        <p>I am currently attending Juno College of Technology. At this time I obtained skills within HTML, CSS, and JavaScript. I will develop my skills in React and Firebase with Juno.</p>
-                        <p>Prior to attending Juno, I was in hospitality where my values of helping others and creating and maintaining relationships helped me work my way from a server to a manager. Throughout my time in hospitality, I honed my skills in teamwork, leadership, and people skills. I am looking forward to further developing my career in web development</p>
-                    </div>
-
-                    <div class="imgContainer">
-                        <img src="" alt="A picutre of me">
-                    </div>
-                </div><!-- END .aboutME -->
+                        <div class="imgContainer">
+                            <img src="" alt="A picutre of me">
+                        </div>
+                    </div><!-- END .aboutME -->
+                </div><!-- END .innerWrapper END -->
 
                 <nav class="sideNav">
+                    <p>nav</p>
                 </nav>
-            </div><!-- END .innerWrapper END -->
+            </div><!-- END .wrapper END -->
         </section><!-- END .whatIDo -->
 
-        <section class="myWorks" id="myWorks">
-            <div class="innerWrapper">
-                <h2>My Works</h2>
-
-                <div class="featured">
-                    <h3>Featured works</h3>
-
-                    <a href="">
-                        <div class="textContainer">
-                            <h4>Project name</h4>
-                            <p>Description</p>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="textContainer">
-                            <h4>Project name</h4>
-                            <p>Description</p>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="textContainer">
-                            <h4>Project name</h4>
-                            <p>Description</p>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="textContainer">
-                            <h4>Project name</h4>
-                            <p>Description</p>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="textContainer">
-                            <h4>Project name</h4>
-                            <p>Description</p>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="textContainer">
-                            <h4>Project name</h4>
-                            <p>Description</p>
-                        </div>
-                    </a>
-
-                    <!-- <a href="">View all projects</a> -->
-
-                </div><!-- END .featured END -->
-
-                <nav class="sideNav">
-                </nav>
-            </div><!-- END .innerWrapper END -->
-        </section><!-- END .myWorks -->
-
-        <section class="resume" id="resume">
-            <div class="innerWrapper">
-                <h2>Resume</h2>
-
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <p>html</p>
-                    <p>css</p>
-                    <p>sass</p>
-                    <p>JavaScript</p>
-                    <p>api</p>
-                    <p>react</p>
-                    <p>git</p>
-                    <p>responsive</p>
-                    <p>accessibility</p>
+        <section class="myProjects flexContainer" id="myProjects">
+            <div class="wrapper flexContainer">
+                <div class="title">
+                    <h2>My projects</h2>
                 </div>
+                
+                <div class="innerWrapper">
+                    <h3>featured projects</h3>
+                    <div class="featured flexContainer">
+
+                        <div class="projectBox">
+                            <a href="">
+                                <div class="textContainer">
+                                    <h4>Project name</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas ut nemo sapiente voluptatibus. Provident natus pariatur quas aperiam illum enim ab optio magnam ipsum culpa? Commodi, deleniti. Excepturi, dolorum.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="projectBox">
+                            <a href="">
+                                <div class="textContainer">
+                                    <h4>Project name</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas ut nemo sapiente voluptatibus. Provident natus pariatur quas aperiam illum enim ab optio magnam ipsum culpa? Commodi, deleniti. Excepturi, dolorum.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="projectBox">
+                            <a href="">
+                                <div class="textContainer">
+                                    <h4>Project name</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas ut nemo sapiente voluptatibus. Provident natus pariatur quas aperiam illum enim ab optio magnam ipsum culpa? Commodi, deleniti. Excepturi, dolorum.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="projectBox">
+                            <a href="">
+                                <div class="textContainer">
+                                    <h4>Project name</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas ut nemo sapiente voluptatibus. Provident natus pariatur quas aperiam illum enim ab optio magnam ipsum culpa? Commodi, deleniti. Excepturi, dolorum.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="projectBox">
+                            <a href="">
+                                <div class="textContainer">
+                                    <h4>Project name</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas ut nemo sapiente voluptatibus. Provident natus pariatur quas aperiam illum enim ab optio magnam ipsum culpa? Commodi, deleniti. Excepturi, dolorum.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="projectBox">
+                            <a href="">
+                                <div class="textContainer">
+                                    <h4>Project name</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas ut nemo sapiente voluptatibus. Provident natus pariatur quas aperiam illum enim ab optio magnam ipsum culpa? Commodi, deleniti. Excepturi, dolorum.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- <a href="">View all projects</a> -->
+
+                    </div><!-- END .featured END -->
+                </div><!-- END .innerWrapper END -->
 
                 <nav class="sideNav">
+                    <p>nav</p>
                 </nav>
-            </div><!-- END .innerWrapper END -->
+            </div><!-- END .wrapper END -->
+        </section><!-- END .myProjects -->
+
+        <section class="resume flexContainer" id="resume">
+            <div class="wrapper flexContainer">
+                <div class="title">
+                    <h2>Resume</h2>
+                </div>
+                
+                <div class="innerWrapper">
+                    <h3>skills & tools</h3>
+                    <ul class="skills flexContainer">
+                        <li>
+                            <i class="devicon-html5-plain" aria-hidden="true"></i>
+                            <p>html5</p>
+                        </li>
+
+                        <li>
+                            <i class="devicon-css3-plain" aria-hidden="true"></i>
+                            <p>css3</p>
+                        </li>
+
+                        <li>
+                            <i class="devicon-sass-original" aria-hidden="true"></i>
+                            <p>sass</p>
+                        </li>
+
+                        <li>
+                            <i class="devicon-javascript-plain" aria-hidden="true"></i>
+                            <p>JavaScript</p>
+                        </li>
+
+                        <li>
+                            <p>api</p>
+                        </li>
+
+                        <li>
+                            <i class="devicon-react-original" aria-hidden="true"></i>
+                            <p>react</p>
+                        </li>
+
+                        <li>
+                            <i class="devicon-git-plain" aria-hidden="true"></i>
+                            <p>git</p>
+                        </li>
+
+                        <li>
+                            <i class="devicon-github-original" aria-hidden="true"></i>
+                            <p>github</p>
+                        </li>
+
+                        <li>
+                            <i class="devicon-firebase-plain" aria-hidden="true"></i>
+                            <p>firebase</p>
+                        </li>
+
+                        <li>
+                            <p>responsive</p>
+                        </li>
+
+                        <li>
+                            <p>accessibility</p>
+                        </li>
+                    </ul>
+                </div><!-- END .innerWrapper END -->
+
+                <nav class="sideNav">
+                    <p>nav</p>
+                </nav>
+            </div><!-- END .wrapper END -->
         </section><!-- END .resume END -->
 
-        <section class="contact" id="contact">
-            <div class="innerWrapper">
-                <h2>Contact</h2>
-
-                <div class="getInTouch">
-                    <h3>Get in touch</h3>
-                    <form action="">
-                        <label for=""></label>
-                        <input type="text">
-                        <label for=""></label>
-                        <input type="email">
-                        <label for=""></label>
-                        <input type="text">
-                        <label for=""></label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </form>
-                </div><!-- END .getInTouch END -->
+        <section class="contact flexContainer" id="contact">
+            <div class="wrapper flexContainer">
+                <div class="title">
+                    <h2>Contact</h2>
+                </div>
+                
+                <div class="innerWrapper">
+                    <div class="getInTouch">
+                        <h3>get in touch</h3>
+                        <form action="">
+                            <div class="formName">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" id="name" placeholder="Name*">
+                            </div>
+                            <div class="formEmail">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="formSubject">
+                                <label for="subject" class="sr-only">Subject</label>
+                                <input type="text" id="subject" placeholder="Subject (Optional)">
+                            </div>
+                            <div class="formMessage">
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea name="" id="message" placeholder="Message*"></textarea>
+                            </div>
+                            <button type="submit">Post Comment</button>
+                        </form>
+                    </div><!-- END .getInTouch END -->
+                </div><!-- END .innerWrapper END -->
 
                 <nav class="sideNav">
+                    <p>nav</p>
                 </nav>
-            </div><!-- END .innerWrapper END -->
+            </div><!-- END .wrapper END -->
         </section><!-- END .contanct END -->
     </main>
 
     <footer>
-        <div class="innerWrapper">
+        <div class="wrapper">
             <p>&copy 2022</p>
         </div>
     </footer>
