@@ -93,7 +93,7 @@ body {
         background-color: $body;
         &:hover,
         &:focus {
-            border: none;
+            border: 1px solid $primary;
             background-color: $primary;
             transition: background-color 0.3s ease-out;
             h4 {
