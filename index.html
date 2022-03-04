@@ -12,23 +12,30 @@
 <body>
     <header>
         <nav class="navBar">
-            <div class="wrapper flexContainer">
+            <div class="wrapper">
                 <!-- nav bar home button -->
                 <a href="./index.html">
-                    <p>chALVou</p>
+                    <p class="logo">ch<span>ALV</span>ou</p>
                 </a>
                 <!-- social media -->
                 <div class="socials">
-                    <i class="devicon-twitter-original" aria-hidden="true"></i>
-                    <span class="sr-only">Link to Twitter</span>
-                    <i class="devicon-linkedin-plain" aria-hidden="true"></i>
-                    <span class="sr-only">Link to LinkedIn</span>
-                    <i class="devicon-github-original" aria-hidden="true"></i>
-                    <span class="sr-only">Link to GitHub</span>
+                    <a href="">
+                        <i class="devicon-twitter-original" aria-hidden="true"></i>
+                        <span class="sr-only">Link to Twitter</span>
+                    </a>
+                    <a href="">
+                        <i class="devicon-linkedin-plain" aria-hidden="true"></i>
+                        <span class="sr-only">Link to LinkedIn</span>
+                    </a>
+                    <a href="">
+                        <i class="devicon-github-original" aria-hidden="true"></i>
+                        <span class="sr-only">Link to GitHub</span>
+                    </a>
                 </div>
                 <input type="checkbox" id="openSidebarMenu">
-                <label for="openSidebarMenu">
-                    <p>menubutton</p>
+                <label class="menuBars" for="openSidebarMenu">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <span class="sr-only">Slide out menu</span>
                 </label>
                 
                 <!-- slideout nav -->
@@ -48,7 +55,15 @@
                 </div>
             </div>
         </nav>
-
+        <nav class="sideNav">
+            <ul>
+                <li><a href="#introduction"><span></span></a></li>
+                <li><a href="#whatIDo"><span></span></a></li>
+                <li><a href="#myProjects"><span></span></a></li>
+                <li><a href="#resume"><span></span></a></li>
+                <li><a href="#contact"><span></span></a></li>
+            </ul>
+        </nav>
 
         <section class="introduction flexContainer" id="introduction">
                 <div class="wrapper flexContainer">
@@ -66,9 +81,7 @@
                         </div><!-- END .hello END -->
                     </div><!-- END .innerWrapper END -->
 
-                    <nav class="sideNav">
-                        <p>nav</p>
-                    </nav>
+                    <div class="sidNav"></div>
                 </div><!-- END .wrapper END -->
             </section><!-- END .introduction END -->
     </header>
@@ -98,9 +111,7 @@
                     </div><!-- END .aboutME -->
                 </div><!-- END .innerWrapper END -->
 
-                <nav class="sideNav">
-                    <p>nav</p>
-                </nav>
+                <div class="sidNav"></div>
             </div><!-- END .wrapper END -->
         </section><!-- END .whatIDo -->
 
@@ -118,7 +129,7 @@
                             <a href="https://pokemonxwordle.netlify.app/">
                                 <div class="textContainer">
                                     <h4>Pokemon x Wordle</h4>
-                                    <p>A paired programming project, Pokemon x Wordle is a guessing game where you try to guess the randomly chosen Pokemon within 6 tries with a Wordle-inspired concept. There are 4 levels of difficulty to choose from.</p>
+                                    <p style="display: none">A paired programming project, Pokemon x Wordle is a guessing game where you try to guess the randomly chosen Pokemon within 6 tries with a Wordle-inspired concept. There are 4 levels of difficulty to choose from.</p>
                                 </div>
                             </a>
                         </div>
@@ -127,7 +138,7 @@
                             <a href="https://sanctuaryhelper.netlify.app/">
                                 <div class="textContainer">
                                     <h4>Sanctuary Helpers</h4>
-                                    <p>Multi-page PSD conversion. Bring the designer’s vision to life with a fully-functional and responsive website using HTML and CSS techniques</p>
+                                    <p style="display: none">Multi-page PSD conversion. Bring the designer’s vision to life with a fully-functional and responsive website using HTML and CSS techniques</p>
                                 </div>
                             </a>
                         </div>
@@ -164,9 +175,7 @@
                     </div><!-- END .featured END -->
                 </div><!-- END .innerWrapper END -->
 
-                <nav class="sideNav">
-                    <p>nav</p>
-                </nav>
+                <div class="sidNav"></div>
             </div><!-- END .wrapper END -->
         </section><!-- END .myProjects -->
 
@@ -240,9 +249,7 @@
                     </ul>
                 </div><!-- END .innerWrapper END -->
 
-                <nav class="sideNav">
-                    <p>nav</p>
-                </nav>
+                <div class="sidNav"></div>
             </div><!-- END .wrapper END -->
         </section><!-- END .resume END -->
 
@@ -277,9 +284,7 @@
                     </div><!-- END .getInTouch END -->
                 </div><!-- END .innerWrapper END -->
 
-                <nav class="sideNav">
-                    <p>nav</p>
-                </nav>
+                <div class="sidNav"></div>
             </div><!-- END .wrapper END -->
         </section><!-- END .contanct END -->
     </main>

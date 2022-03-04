@@ -16,18 +16,23 @@ body {
 .introduction, .whatIDo, .myProjects, .resume, .contact {
     display: flex;
     min-height: 100vh;
+    padding-top: 60px;
     align-items: center;
     .wrapper {
         justify-content: space-between;
     }
-    // * {border: 1px solid red}
+    .textContainer p {
+        padding-left: 0.25rem;
+    }
+    * {border: 1px solid red}
 }
 
 
 .introduction {
-    background-image: url('../assets/intro-background.jpg');
+    background-image: url('../assets/intro-background2.jpg');
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
     .textContainer {
         width: 50%;
         padding: 0 15px;
@@ -100,6 +105,9 @@ body {
 }
 
 .resume {
+    // background-image: url('../assets/skills-background2.jpg');
+    // background-repeat: no-repeat;
+    // background-position: top center;
     .skills {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -121,9 +129,9 @@ body {
 
 
 .contact {
-    background-image: url('../assets/contact-background.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
+    // background-image: url('../assets/contact-background.jpg');
+    // background-repeat: no-repeat;
+    // background-position: top center;
     .formName, .formEmail , .formSubject, .formMessage {
         padding: 0 15px;
         margin-bottom: 30px;
