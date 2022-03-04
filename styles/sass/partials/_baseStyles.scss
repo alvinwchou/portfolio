@@ -29,11 +29,11 @@ img {
     display: flex;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-transform: uppercase;
 }
 
@@ -48,6 +48,7 @@ h2 {
 
 h3 {
     padding: 0 15px;
+    margin-bottom: 3.5rem;
 }
 
 ul {
@@ -60,4 +61,8 @@ a {
 
 button {
     border: none;
+}
+
+span {
+    margin: 0;
 }
