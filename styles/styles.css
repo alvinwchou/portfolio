@@ -403,7 +403,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -417,6 +417,11 @@ body {
   border: 1px solid red;
 }
 
+.introduction {
+  background-image: url("../assets/intro-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 .introduction .textContainer {
   width: 50%;
   padding: 0 15px;
