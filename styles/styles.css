@@ -615,6 +615,13 @@ body {
 .resume i {
   font-size: 3rem;
 }
+.resume .devicon-javascript-plain {
+  color: #f3ca2f;
+}
+.resume p {
+  text-align: center;
+  padding-top: 0.5rem;
+}
 
 .contact .formName, .contact .formEmail, .contact .formSubject, .contact .formMessage {
   padding: 0 15px;
