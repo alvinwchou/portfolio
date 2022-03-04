@@ -263,6 +263,13 @@ h3 {
   letter-spacing: -0.025em;
 }
 
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
 p {
   font-size: 0.6rem;
   color: #fff;
@@ -393,6 +400,7 @@ button {
 /* _sections.scss */
 .introduction, .myProjects {
   background-color: #ffdfa4;
+  background-color: #272727;
 }
 
 body {
@@ -412,9 +420,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.introduction *, .whatIDo *, .myProjects *, .resume *, .contact * {
-  border: 1px solid red;
 }
 
 .introduction {
@@ -470,9 +475,22 @@ body {
 }
 .myProjects .projectBox {
   width: 25%;
+  padding: 0 15px;
+  margin-top: 30px;
+}
+.myProjects a {
+  display: block;
+  position: relative;
+  padding-bottom: 75%;
+  border: 1px solid #fff;
 }
 .myProjects .textContainer {
-  padding: 0 15px;
+  position: absolute;
+  padding: 2rem 1.5rem;
+}
+.myProjects .textContainer p {
+  color: #cccccc;
+  margin-top: 0.5r;
 }
 
 .resume .skills {
