@@ -7,7 +7,7 @@ body {
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: $solidWhite;
 }
 
@@ -52,20 +52,18 @@ p {
     letter-spacing: -0.025em;
 }
 
-a {
-    color: $secondary;
-}
-
 i {
     color: $solidWhite;
 }
 
 input, textarea {
+    font-family: 'Poppins', sans-serif;
     font-size: 0.6rem;
     color: $solidWhite;
 }
 
 button {
+    font-family: 'Poppins', sans-serif;
     font-size: 0.6rem;
     color: $solidWhite;
     line-height: 1.4;

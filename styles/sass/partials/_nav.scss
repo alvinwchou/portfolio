@@ -8,10 +8,13 @@
     a, .socials, label {
         display: inline-block;
     }
-    a:hover span,
-    a:focus span {
-        color: $primary;
-        transition: color 0.7s ease-out;
+    a {
+        color: $secondary;
+        &:hover span,
+        &:focus span {
+            color: $primary;
+            transition: color 0.7s ease-out;
+        }
     }
     .socials {
         margin-left: 200px;

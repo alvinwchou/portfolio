@@ -239,7 +239,7 @@ body {
   line-height: 2;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: #fff;
 }
 
@@ -284,20 +284,18 @@ p {
   letter-spacing: -0.025em;
 }
 
-a {
-  color: #7e7e7e;
-}
-
 i {
   color: #fff;
 }
 
 input, textarea {
+  font-family: "Poppins", sans-serif;
   font-size: 0.6rem;
   color: #fff;
 }
 
 button {
+  font-family: "Poppins", sans-serif;
   font-size: 0.6rem;
   color: #fff;
   line-height: 1.4;
@@ -385,8 +383,10 @@ span {
 .navBar a, .navBar .socials, .navBar label {
   display: inline-block;
 }
-.navBar a:hover span,
-.navBar a:focus span {
+.navBar a {
+  color: #7e7e7e;
+}
+.navBar a:hover span, .navBar a:focus span {
   color: #f3ca2f;
   -webkit-transition: color 0.7s ease-out;
   transition: color 0.7s ease-out;
@@ -494,12 +494,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.introduction .textContainer p, .whatIDo .textContainer p, .myProjects .textContainer p, .resume .textContainer p, .contact .textContainer p {
-  padding-left: 0.25rem;
-}
-.introduction *, .whatIDo *, .myProjects *, .resume *, .contact * {
-  border: 1px solid red;
-}
 
 .introduction {
   background-image: url("../assets/intro-background2.jpg");
@@ -512,6 +506,7 @@ body {
   padding: 0 15px;
 }
 .introduction p {
+  padding-left: 0.25rem;
   margin-bottom: 1.7rem;
 }
 .introduction h1 span {
@@ -549,6 +544,11 @@ body {
   height: 490px;
 }
 
+.myProjects {
+  background-image: url("../assets/pokemonxwordle-background2.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 .myProjects .featured {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -563,6 +563,19 @@ body {
   position: relative;
   padding-bottom: 75%;
   border: 1px solid #fff;
+  background-color: #272727;
+}
+.myProjects a:hover, .myProjects a:focus {
+  border: none;
+  background-color: #f3ca2f;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+.myProjects a:hover h4, .myProjects a:focus h4 {
+  color: #000;
+}
+.myProjects a:hover p, .myProjects a:focus p {
+  color: #7e7e7e;
 }
 .myProjects .textContainer {
   position: absolute;
@@ -570,7 +583,7 @@ body {
 }
 .myProjects .textContainer p {
   color: #cccccc;
-  margin-top: 0.5r;
+  margin-top: 0.5rem;
 }
 
 .resume .skills {
@@ -614,20 +627,27 @@ body {
 .contact input, .contact textarea {
   width: 100%;
   background-color: #333;
-  padding: 0.2rem 1rem 0;
   border: 0;
 }
 .contact input {
   height: 3.6em;
+  padding: 0.2rem 1rem 0;
 }
 .contact textarea {
   display: block;
   height: 15rem;
+  padding: 0.8rem 1rem 0;
   resize: none;
 }
 .contact button {
-  width: 20%;
-  margin: 0 15px;
   background-color: #000;
+  width: 20%;
   padding: 1.1em 2.3em;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.contact button:hover {
+  background-color: #f3ca2f;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
 }
