@@ -355,6 +355,8 @@ h2 {
 h3 {
   padding: 0 15px;
   margin: 1.5rem 0 2rem;
+  -webkit-text-decoration: underline #f3ca2f 0.17rem;
+          text-decoration: underline #f3ca2f 0.17rem;
 }
 
 ul {
@@ -399,7 +401,7 @@ span {
   height: 0px;
   margin: 0 1.5rem;
 }
-.navBar a:hover span, .navBar a:focus span {
+.navBar a:hover, .navBar a:focus, .navBar a:hover span, .navBar a:focus span {
   color: #f3ca2f;
   -webkit-transition: color 0.7s ease-out;
   transition: color 0.7s ease-out;
@@ -421,18 +423,16 @@ span {
   transition: color 0.7s ease-out;
 }
 
-.socials a:hover i,
-.socials a:focus i {
-  color: #f3ca2f;
-  -webkit-transition: color 0.7s ease-out;
-  transition: color 0.7s ease-out;
-}
-
 .slideOutNav {
+  -webkit-transform: translate(0);
+          transform: translate(0);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 35%;
   background-color: #272727;
   position: fixed;
@@ -440,7 +440,67 @@ span {
   right: 0;
   bottom: 0;
   z-index: 20;
+  padding-left: 5%;
   left: -1000px;
+}
+.slideOutNav * {
+  border: 1px solid red;
+}
+.slideOutNav .flexContainer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.slideOutNav .flexContainer button {
+  background-color: #272727;
+  font-size: 1.2rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+.slideOutNav .flexContainer button:hover, .slideOutNav .flexContainer button:focus {
+  color: #f3ca2f;
+  -webkit-transition: color 0.7s ease-out;
+  transition: color 0.7s ease-out;
+}
+.slideOutNav a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.025rem;
+  margin: 0;
+}
+.slideOutNav a:hover, .slideOutNav a:focus {
+  color: #fff;
+}
+.slideOutNav ul {
+  position: absolute;
+  width: 75%;
+  top: 7rem;
+  bottom: 10rem;
+  overflow-y: auto;
+}
+.slideOutNav li {
+  margin: 0.6rem 0;
+}
+.slideOutNav .menuBottom {
+  padding-bottom: 4rem;
+}
+.slideOutNav .menuBottom .socials {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 0;
+}
+.slideOutNav .menuBottom i {
+  font-size: 1.1rem;
+  color: #7e7e7e;
+  margin-right: 20px;
+}
+.slideOutNav .menuBottom i:hover {
+  color: #f3ca2f;
+}
+.slideOutNav .menuBottom p {
+  color: #fff;
 }
 
 .sideNav, .sidNav {
@@ -479,6 +539,7 @@ span {
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: yellow blue;
 }
 
 body {

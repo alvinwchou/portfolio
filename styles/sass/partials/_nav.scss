@@ -19,6 +19,8 @@
         color: $secondary;
         height: 0px;
         margin: 0 1.5rem;
+        &:hover,
+        &:focus,
         &:hover span,
         &:focus span {
             color: $primary;
@@ -43,16 +45,12 @@
     }
 }
 
-.socials {
-    a:hover i,
-    a:focus i{
-        color: $primary;
-        transition: color 0.7s ease-out;
-    } 
-}
-
 .slideOutNav {
+    *{border: 1px solid red;
+    }
+    transform: translate(0);
     flex-direction: column;
+    justify-content: space-between;
     width: 35%;
     background-color: $body;
     position: fixed;
@@ -60,7 +58,63 @@
     right: 0;
     bottom: 0;
     z-index: 20;
+    padding-left: 5%;
     left: -1000px;
+    .flexContainer {
+        justify-content: end;
+        button {
+            background-color: $body;
+            font-size: 1.2rem;
+            margin: 1rem;
+            cursor: pointer;
+            &:hover,
+            &:focus {
+            color: $primary;
+            transition: color 0.7s ease-out;
+            }
+        }
+    }
+    a {
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: -0.025rem;
+        margin: 0;
+        &:hover,
+        &:focus {
+            color: $solidWhite;
+        }
+    }
+    ul {
+        position: absolute;
+        width: 75%;
+        // left: 0;
+        top: 7rem;
+        bottom: 10rem;
+        overflow-y: auto;
+    }
+    li {
+        margin: 0.6rem 0;
+    }
+    .menuBottom {
+        padding-bottom: 4rem;
+        .socials {
+            width: 100%;
+            justify-content: space-between;
+            margin-left: 0;
+        }
+        i {
+            font-size: 1.1rem;
+            color: $secondary;
+            margin-right: 20px;
+            &:hover {
+                color: $primary;
+            }
+        }
+        p {
+            color: $solidWhite;
+        }
+    }
+
 }
 
 .sideNav, .sidNav {
