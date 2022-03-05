@@ -83,15 +83,10 @@ body {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
     }
-
-
-
     .projectBox {
         padding: 0 15px;
         margin-top: 30px;
     }
-
-    
     a {
         display: block;
         position: relative;
@@ -111,7 +106,6 @@ body {
             }
         }
     }
-
     .textContainer {
         position: absolute;
         padding: 2rem 1.5rem;
@@ -123,8 +117,7 @@ body {
             display: none;
         }
     }
-
-        .projectDisplay {
+    .projectDisplay {
         grid-column: 1 / 2;
         grid-row: 1 / end;
         a {
@@ -174,9 +167,6 @@ body {
 
 
 .contact {
-    // background-image: url('../assets/contact-background.jpg');
-    // background-repeat: no-repeat;
-    // background-position: top center;
     .formName, .formEmail , .formSubject, .formMessage {
         padding: 0 15px;
         margin-bottom: 30px;

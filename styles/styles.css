@@ -415,6 +415,9 @@ span {
   opacity: 0;
   position: absolute;
 }
+.navBar input[type=checkbox]:checked ~ .slideOutNav {
+  left: auto;
+}
 .navBar .menuBars {
   cursor: pointer;
   float: right;
@@ -445,9 +448,6 @@ span {
   z-index: 20;
   padding-left: 5%;
   left: -1000px;
-}
-.slideOutNav * {
-  border: 1px solid red;
 }
 .slideOutNav .flexContainer {
   -webkit-box-pack: end;

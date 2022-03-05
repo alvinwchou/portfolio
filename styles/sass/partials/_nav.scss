@@ -33,6 +33,9 @@
     input[type=checkbox] {
         opacity: 0;
         position: absolute;
+        &:checked ~ .slideOutNav {
+            left: auto;
+        }
     }
     .menuBars {
         cursor: pointer;
@@ -44,14 +47,12 @@
         &:focus i {
             color: $primary;
             transition: color 0.7s ease-out;
-        } 
+        }
+
     }
 }
 
 .slideOutNav {
-    *{border: 1px solid red;
-    }
-    // transform: translate(0);
     flex-direction: column;
     justify-content: space-between;
     width: 35%;
