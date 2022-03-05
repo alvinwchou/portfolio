@@ -373,6 +373,10 @@ span {
   margin: 0;
 }
 
+.highlight {
+  color: #f3ca2f;
+}
+
 /* nav.scss */
 .navBar {
   width: 100%;
@@ -383,20 +387,22 @@ span {
 .navBar a, .navBar .socials, .navBar label {
   display: inline-block;
 }
-.navBar a {
-  color: #7e7e7e;
-}
-.navBar a:hover span, .navBar a:focus span {
-  color: #f3ca2f;
-  -webkit-transition: color 0.7s ease-out;
-  transition: color 0.7s ease-out;
-}
 .navBar .socials {
   margin-left: 200px;
 }
 .navBar .socials i {
   font-size: 0.8rem;
-  padding: 0 1.5rem;
+  cursor: pointer;
+}
+.navBar a {
+  color: #7e7e7e;
+  height: 0px;
+  margin: 0 1.5rem;
+}
+.navBar a:hover span, .navBar a:focus span {
+  color: #f3ca2f;
+  -webkit-transition: color 0.7s ease-out;
+  transition: color 0.7s ease-out;
 }
 .navBar input[type=checkbox] {
   opacity: 0;
@@ -407,7 +413,7 @@ span {
   float: right;
 }
 .navBar .menuBars i {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .navBar .menuBars:hover i, .navBar .menuBars:focus i {
   color: #f3ca2f;
@@ -450,8 +456,8 @@ span {
 }
 .sideNav li, .sideNav span {
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 .sideNav li {
   background-color: #fff;
@@ -545,9 +551,10 @@ body {
 }
 
 .myProjects {
-  background-image: url("../assets/pokemonxwordle-background2.png");
+  background-image: url("../assets/sanctuary-helpers-homedull.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
+  background-size: cover;
 }
 .myProjects .featured {
   -ms-flex-wrap: wrap;
@@ -563,7 +570,6 @@ body {
   position: relative;
   padding-bottom: 75%;
   border: 1px solid #fff;
-  background-color: #272727;
 }
 .myProjects a:hover, .myProjects a:focus {
   border: 1px solid #f3ca2f;

@@ -8,19 +8,21 @@
     a, .socials, label {
         display: inline-block;
     }
-    a {
-        color: $secondary;
-        &:hover span,
-        &:focus span {
-            color: $primary;
-            transition: color 0.7s ease-out;
-        }
-    }
     .socials {
         margin-left: 200px;
         i {
             font-size: 0.8rem;
-            padding: 0 1.5rem;
+            cursor: pointer;
+        }
+    }
+    a {
+        color: $secondary;
+        height: 0px;
+        margin: 0 1.5rem;
+        &:hover span,
+        &:focus span {
+            color: $primary;
+            transition: color 0.7s ease-out;
         }
     }
     input[type=checkbox] {
@@ -31,7 +33,7 @@
         cursor: pointer;
         float: right;
         i {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
         &:hover i,
         &:focus i {
@@ -72,8 +74,8 @@
     transform: translateY(-50%);
     li, span {
         border-radius: 50%;
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
     }
     li {
         background-color: $solidWhite;

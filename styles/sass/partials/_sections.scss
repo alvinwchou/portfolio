@@ -73,9 +73,10 @@ body {
 }
 
 .myProjects {
-    background-image: url('../assets/pokemonxwordle-background2.png');
+    background-image: url('../assets/sanctuary-helpers-homedull.jpg');
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
+    background-size: cover;
     .featured {
         flex-wrap: wrap;
     }
@@ -90,7 +91,7 @@ body {
         position: relative;
         padding-bottom: 75%;
         border: 1px solid $solidWhite;
-        background-color: $body;
+        // background-color: $body;
         &:hover,
         &:focus {
             border: 1px solid $primary;
