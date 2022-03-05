@@ -396,12 +396,17 @@ span {
   font-size: 0.8rem;
   cursor: pointer;
 }
+.navBar .socials i:hover, .navBar .socials i:focus {
+  color: #f3ca2f;
+  -webkit-transition: color 0.7s ease-out;
+  transition: color 0.7s ease-out;
+}
 .navBar a {
   color: #7e7e7e;
   height: 0px;
   margin: 0 1.5rem;
 }
-.navBar a:hover, .navBar a:focus, .navBar a:hover span, .navBar a:focus span {
+.navBar a:hover span, .navBar a:focus span {
   color: #f3ca2f;
   -webkit-transition: color 0.7s ease-out;
   transition: color 0.7s ease-out;
@@ -424,8 +429,6 @@ span {
 }
 
 .slideOutNav {
-  -webkit-transform: translate(0);
-          transform: translate(0);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

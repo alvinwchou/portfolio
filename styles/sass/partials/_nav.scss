@@ -13,14 +13,17 @@
         i {
             font-size: 0.8rem;
             cursor: pointer;
+            &:hover,
+            &:focus {
+                color: $primary;
+                transition: color 0.7s ease-out;
+            }
         }
     }
     a {
         color: $secondary;
         height: 0px;
         margin: 0 1.5rem;
-        &:hover,
-        &:focus,
         &:hover span,
         &:focus span {
             color: $primary;
@@ -48,7 +51,7 @@
 .slideOutNav {
     *{border: 1px solid red;
     }
-    transform: translate(0);
+    // transform: translate(0);
     flex-direction: column;
     justify-content: space-between;
     width: 35%;
