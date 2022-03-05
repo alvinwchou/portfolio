@@ -7,14 +7,14 @@
 
 html { 
     scroll-behavior: smooth;
-    scrollbar-color: yellow blue;
+    scrollbar-color: $primary $body;
 }
 
 body {
     background-color: $body;
 }
 
-.introduction, .whatIDo, .myProjects, .resume, .contact {
+.introduction, .whatIDo, .myProjects, .myProjects2, .resume, .contact {
     display: flex;
     min-height: 100vh;
     padding-top: 60px;
@@ -79,13 +79,18 @@ body {
     background-position: center;
     background-size: cover;
     .featured {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
     }
+
+
+
     .projectBox {
-        width: 25%;
         padding: 0 15px;
         margin-top: 30px;
     }
+
     
     a {
         display: block;
@@ -109,14 +114,30 @@ body {
 
     .textContainer {
         position: absolute;
-        // left: 0;
-        // top: 0;
-        // width: 100%;
-        // height: 100%;
         padding: 2rem 1.5rem;
         p {
             color: #cccccc;
             margin-top: 0.5rem;
+        }
+        p:nth-child(3){
+            display: none;
+        }
+    }
+
+        .projectDisplay {
+        grid-column: 1 / 2;
+        grid-row: 1 / end;
+        a {
+            background-color: $primary;
+            padding-bottom: 0;
+            height: 100%;
+        }
+        .textContainer {
+            position: relative;
+            p {
+                color: $secondary;
+                display: block;
+            }
         }
     }
 }

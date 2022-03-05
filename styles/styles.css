@@ -542,14 +542,14 @@ span {
 
 html {
   scroll-behavior: smooth;
-  scrollbar-color: yellow blue;
+  scrollbar-color: #f3ca2f #272727;
 }
 
 body {
   background-color: #272727;
 }
 
-.introduction, .whatIDo, .myProjects, .resume, .contact {
+.introduction, .whatIDo, .myProjects, .myProjects2, .resume, .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,7 +559,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.introduction .wrapper, .whatIDo .wrapper, .myProjects .wrapper, .resume .wrapper, .contact .wrapper {
+.introduction .wrapper, .whatIDo .wrapper, .myProjects .wrapper, .myProjects2 .wrapper, .resume .wrapper, .contact .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -621,11 +621,11 @@ body {
   background-size: cover;
 }
 .myProjects .featured {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
 }
 .myProjects .projectBox {
-  width: 25%;
   padding: 0 15px;
   margin-top: 30px;
 }
@@ -654,6 +654,25 @@ body {
 .myProjects .textContainer p {
   color: #cccccc;
   margin-top: 0.5rem;
+}
+.myProjects .textContainer p:nth-child(3) {
+  display: none;
+}
+.myProjects .projectDisplay {
+  grid-column: 1/2;
+  grid-row: 1/end;
+}
+.myProjects .projectDisplay a {
+  background-color: #f3ca2f;
+  padding-bottom: 0;
+  height: 100%;
+}
+.myProjects .projectDisplay .textContainer {
+  position: relative;
+}
+.myProjects .projectDisplay .textContainer p {
+  color: #7e7e7e;
+  display: block;
 }
 
 .resume .skills {
