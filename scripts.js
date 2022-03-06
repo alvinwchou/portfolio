@@ -5,6 +5,9 @@ portfolio.eventListenerSetUp = () => {
     document.querySelector('.slideOutNav button').addEventListener('click', () => {
         document.querySelector('#openSidebarMenu').checked = false;
     });
+
+    // display description of project
+    document.querySelector
 };
 
 portfolio.init = () => {

@@ -416,7 +416,12 @@ span {
   position: absolute;
 }
 .navBar input[type=checkbox]:checked ~ .slideOutNav {
-  left: auto;
+  right: 0;
+}
+.navBar input[type=checkbox]:checked ~ .slideOutNav ul, .navBar input[type=checkbox]:checked ~ .slideOutNav .slideSocials, .navBar input[type=checkbox]:checked ~ .slideOutNav p {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
 }
 .navBar .menuBars {
   cursor: pointer;
@@ -432,13 +437,6 @@ span {
 }
 
 .slideOutNav {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 35%;
   background-color: #272727;
   position: fixed;
@@ -447,23 +445,30 @@ span {
   bottom: 0;
   z-index: 20;
   padding-left: 5%;
-  left: -1000px;
+  right: -50%;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 .slideOutNav .flexContainer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
 }
-.slideOutNav .flexContainer button {
+.slideOutNav button {
   background-color: #272727;
   font-size: 1.2rem;
-  margin: 1rem;
+  margin-top: 2.5rem;
+  margin-right: 2vw;
+  line-height: 1;
   cursor: pointer;
 }
-.slideOutNav .flexContainer button:hover, .slideOutNav .flexContainer button:focus {
+.slideOutNav button:hover, .slideOutNav button:focus {
   color: #f3ca2f;
   -webkit-transition: color 0.7s ease-out;
   transition: color 0.7s ease-out;
+}
+.slideOutNav .mainMenu {
+  height: 100%;
 }
 .slideOutNav a {
   font-size: 1.2rem;
@@ -478,32 +483,58 @@ span {
   position: absolute;
   width: 75%;
   top: 7rem;
-  bottom: 10rem;
+  bottom: 8rem;
   overflow-y: auto;
+  opacity: 0;
+  -webkit-transform: translateY(3rem);
+          transform: translateY(3rem);
+  -webkit-transition: opacity 0.5s 0.4s ease, -webkit-transform 0.5s 0.4s ease;
+  transition: opacity 0.5s 0.4s ease, -webkit-transform 0.5s 0.4s ease;
+  transition: transform 0.5s 0.4s ease, opacity 0.5s 0.4s ease;
+  transition: transform 0.5s 0.4s ease, opacity 0.5s 0.4s ease, -webkit-transform 0.5s 0.4s ease;
 }
 .slideOutNav li {
   margin: 0.6rem 0;
 }
 .slideOutNav .menuBottom {
-  padding-bottom: 4rem;
+  position: absolute;
+  bottom: 2.5rem;
 }
-.slideOutNav .menuBottom .socials {
-  width: 100%;
+.slideOutNav .menuBottom .slideSocials {
+  width: 200px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 0;
+  margin-bottom: 1rem;
+  opacity: 0;
+  -webkit-transform: translateY(3rem);
+          transform: translateY(3rem);
+  -webkit-transition: opacity 0.5s 0.6s ease, -webkit-transform 0.5s 0.6s ease;
+  transition: opacity 0.5s 0.6s ease, -webkit-transform 0.5s 0.6s ease;
+  transition: transform 0.5s 0.6s ease, opacity 0.5s 0.6s ease;
+  transition: transform 0.5s 0.6s ease, opacity 0.5s 0.6s ease, -webkit-transform 0.5s 0.6s ease;
+}
+.slideOutNav .menuBottom a {
+  display: inline;
+  margin-right: 1rem;
 }
 .slideOutNav .menuBottom i {
   font-size: 1.1rem;
   color: #7e7e7e;
-  margin-right: 20px;
 }
 .slideOutNav .menuBottom i:hover {
   color: #f3ca2f;
 }
 .slideOutNav .menuBottom p {
   color: #fff;
+  display: block;
+  opacity: 0;
+  -webkit-transform: translateY(3rem);
+          transform: translateY(3rem);
+  -webkit-transition: opacity 0.5s 0.8s ease, -webkit-transform 0.5s 0.8s ease;
+  transition: opacity 0.5s 0.8s ease, -webkit-transform 0.5s 0.8s ease;
+  transition: transform 0.5s 0.8s ease, opacity 0.5s 0.8s ease;
+  transition: transform 0.5s 0.8s ease, opacity 0.5s 0.8s ease, -webkit-transform 0.5s 0.8s ease;
 }
 
 .sideNav, .sidNav {
@@ -663,8 +694,6 @@ body {
   grid-row: 1/end;
 }
 .myProjects .projectDisplay a {
-  background-color: #f3ca2f;
-  padding-bottom: 0;
   height: 100%;
 }
 .myProjects .projectDisplay .textContainer {
