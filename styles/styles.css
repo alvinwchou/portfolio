@@ -567,10 +567,6 @@ span {
 
 /* _header.scss */
 /* _sections.scss */
-.introduction, .myProjects {
-  background-color: #ffdfa4;
-}
-
 html {
   scroll-behavior: smooth;
   scrollbar-color: #f3ca2f #272727;
@@ -580,7 +576,7 @@ body {
   background-color: #272727;
 }
 
-.introduction, .whatIDo, .myProjects, .myProjects2, .resume, .contact {
+.introduction, .whatIDo, .myProjects, .resume, .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,7 +586,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.introduction .wrapper, .whatIDo .wrapper, .myProjects .wrapper, .myProjects2 .wrapper, .resume .wrapper, .contact .wrapper {
+.introduction .wrapper, .whatIDo .wrapper, .myProjects .wrapper, .resume .wrapper, .contact .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -646,7 +642,7 @@ body {
 }
 
 .myProjects {
-  background-image: url("../assets/sanctuary-helpers-homedull.jpg");
+  background-image: url("../assets/project-bg3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -656,7 +652,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
 }
-.myProjects .projectBox {
+.myProjects .projectBox, .myProjects .projectDisplay {
   padding: 0 15px;
   margin-top: 30px;
 }
@@ -694,14 +690,20 @@ body {
   grid-row: 1/end;
 }
 .myProjects .projectDisplay a {
+  padding-bottom: 0;
   height: 100%;
 }
 .myProjects .projectDisplay .textContainer {
   position: relative;
 }
 .myProjects .projectDisplay .textContainer p {
-  color: #7e7e7e;
   display: block;
+}
+.myProjects .projectDisplay span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
 }
 
 .resume .skills {

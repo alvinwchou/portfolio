@@ -1,10 +1,5 @@
 /* _sections.scss */
 
-.introduction, .myProjects {
-    background-color: rgb(255, 223, 164);
-    // background-color: $body;
-}
-
 html { 
     scroll-behavior: smooth;
     scrollbar-color: $primary $body;
@@ -14,7 +9,7 @@ body {
     background-color: $body;
 }
 
-.introduction, .whatIDo, .myProjects, .myProjects2, .resume, .contact {
+.introduction, .whatIDo, .myProjects, .resume, .contact {
     display: flex;
     min-height: 100vh;
     padding-top: 60px;
@@ -74,7 +69,7 @@ body {
 }
 
 .myProjects {
-    background-image: url('../assets/sanctuary-helpers-homedull.jpg');
+    background-image: url('../assets/project-bg3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -83,10 +78,11 @@ body {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
     }
-    .projectBox {
+    .projectBox, .projectDisplay {
         padding: 0 15px;
         margin-top: 30px;
     }
+
     a {
         display: block;
         position: relative;
@@ -121,15 +117,21 @@ body {
         grid-column: 1 / 2;
         grid-row: 1 / end;
         a {
-            // padding-bottom: 0;
+            padding-bottom: 0;
             height: 100%;
         }
         .textContainer {
             position: relative;
             p {
-                color: $secondary;
+                // color: $secondary;
                 display: block;
             }
+        }
+        span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 1px solid $solidWhite;
         }
     }
 }
