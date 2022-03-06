@@ -23,11 +23,16 @@ portfolio.eventListenerSetUp = () => {
 
             if (e.target.localName == 'a') {
                 document.querySelector('.projectDisplay').innerHTML = e.target.parentElement.innerHTML
+                console.log('>>>>>>>>', e.target);
             } else if (e.target.parentElement.localName == 'a') {
-                console.log('!!!!!!!!!!!!!!!!!!you are on the right track!!!!!!!!!!!!!!!!!!!');
-                console.log(e.target.parentElement.parentElement.classList[1]);
-                console.log(portfolio.porjectBackgroundImage[e.target.parentElement.parentElement.classList[1]]);
-                document.querySelector('.myProjects').style.backgroundImage = portfolio.porjectBackgroundImage[e.target.parentElement.parentElement.classList[1]];
+                // console.log('!!!!!!!!!!!!!!!!!!you are on the right track!!!!!!!!!!!!!!!!!!!');
+                // console.log(e.target.parentElement.parentElement.classList[1]);
+                // console.log(portfolio.porjectBackgroundImage[e.target.parentElement.parentElement.classList[1]]);
+                // document.querySelector('.myProjects').style.backgroundImage = portfolio.porjectBackgroundImage[e.target.parentElement.parentElement.classList[1]];
+                document.querySelector('.projectBackground').style.backgroundImage = portfolio.porjectBackgroundImage[e.target.parentElement.parentElement.classList[1]];
+                document.querySelector('.projectBackground').classList.remove('zoom');
+                document.querySelector('.projectBackground').classList.add('zoom');
+
 
                 document.querySelector('.projectDisplay').innerHTML = e.target.parentElement.parentElement.innerHTML;
             }

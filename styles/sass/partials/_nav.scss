@@ -4,7 +4,7 @@
     width: 100%;
     padding-top: 2rem;
     position: fixed;
-    z-index: 10;
+    z-index: 90;
     a, .socials, label {
         display: inline-block;
     }
@@ -64,7 +64,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 20;
+    z-index: 100;
     padding-left: 5%;
     right: -50%;
     transition: 0.6s ease;
@@ -154,6 +154,7 @@
     top: 50%;
     right: 2vw;
     transform: translateY(-50%);
+    z-index: 90;
     li, span {
         border-radius: 50%;
         width: 10px;
