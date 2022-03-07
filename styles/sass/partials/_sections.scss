@@ -3,7 +3,7 @@
 html { 
     scroll-behavior: smooth;
     scrollbar-color: $primary $body;
-    // overflow: hidden;
+    overflow: hidden;
     // overflow-y: auto;
 }
 
@@ -124,8 +124,8 @@ body {
         grid-template-rows: 1fr 1fr;
     }
     .projectBox, .projectDisplay {
-        padding: 0 15px;
-        margin-top: 30px;
+        padding: 30px 15px;
+        margin-top: 0px;
     }
 
     a {
@@ -161,11 +161,14 @@ body {
     .projectDisplay {
         grid-column: 1 / 2;
         grid-row: 1 / end;
-        // overflow: hidden;
-        // overflow-y: auto
+        overflow: hidden;
+        // height: 394.8px;
         a {
             padding-bottom: 0;
             height: 100%;
+            overflow-y: auto;
+            // margin-bottom: auto;
+            
         }
         .textContainer {
             position: relative;
@@ -179,6 +182,17 @@ body {
             width: 100%;
             height: 100%;
             border: 1px solid $solidWhite;
+        }
+    }
+    .hovered {
+        a {
+            background-color: $primary;
+        }
+        h4 {
+            color: #000;
+        }
+        p {
+            color: $secondary;
         }
     }
 }

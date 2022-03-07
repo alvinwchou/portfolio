@@ -571,6 +571,7 @@ span {
 html {
   scroll-behavior: smooth;
   scrollbar-color: #f3ca2f #272727;
+  overflow: hidden;
 }
 
 body {
@@ -688,8 +689,8 @@ body {
   grid-template-rows: 1fr 1fr;
 }
 .myProjects .projectBox, .myProjects .projectDisplay {
-  padding: 0 15px;
-  margin-top: 30px;
+  padding: 30px 15px;
+  margin-top: 0px;
 }
 .myProjects a {
   display: block;
@@ -723,10 +724,12 @@ body {
 .myProjects .projectDisplay {
   grid-column: 1/2;
   grid-row: 1/end;
+  overflow: hidden;
 }
 .myProjects .projectDisplay a {
   padding-bottom: 0;
   height: 100%;
+  overflow-y: auto;
 }
 .myProjects .projectDisplay .textContainer {
   position: relative;
@@ -739,6 +742,15 @@ body {
   width: 100%;
   height: 100%;
   border: 1px solid #fff;
+}
+.myProjects .hovered a {
+  background-color: #f3ca2f;
+}
+.myProjects .hovered h4 {
+  color: #000;
+}
+.myProjects .hovered p {
+  color: #7e7e7e;
 }
 
 .resume .skills {

@@ -11,7 +11,7 @@ portfolio.backgroundChanager = (number) => {
     const projectBackgrounds = document.querySelectorAll('.projectBackground')
     projectBackgrounds.forEach( (projectBackground) => {
         projectBackground.classList.remove('zoom')
-        console.log('removed');
+        // console.log('removed');
     })
     projectBackgrounds[number].classList.add('zoom')
 }
@@ -26,7 +26,7 @@ portfolio.eventListenerSetUp = () => {
     // display description of project
     const projects = document.querySelectorAll('.projectBox');
     projects.forEach( (project, index) => {
-        console.log(project);
+        // console.log(project);
         project.querySelector('a').addEventListener('mouseover', (e) => {
             // console.log("mouse");
             // console.log(e.target);
@@ -50,6 +50,7 @@ portfolio.eventListenerSetUp = () => {
 
                 // projectBackgrounds[index].classList.add('zoom')
                 portfolio.backgroundChanager(index);
+                
 
             } else if (e.target.parentElement.localName == 'a') {
                 // document.querySelector('.projectBackground').style.backgroundImage = portfolio.porjectBackgroundImage[e.target.parentElement.parentElement.classList[1]];
@@ -68,8 +69,47 @@ portfolio.eventListenerSetUp = () => {
                 
             }
 
+            // if (e.target.localName == 'a' || e.target.parentElement.localName == 'a'|| e.parentElement.localName == 'div') {
+            //     console.log(document.querySelector('.projectDisplay'));
+            //     console.log(document.querySelector('.projectDisplay').classList);
+            //     document.querySelector('.projectDisplay').classList.add('hovered')
+            // } else {
+            //     document.querySelector('.projectDisplay').classList.remove('hovered')
+            //     console.log(e.target);
+                
+            // }
         });
     });
+
+    projects.forEach( (project) => {
+        project.addEventListener('mouseover', (e) => {
+            console.log("projectbox");
+            console.log(e.target);
+
+            if (e.target.classList[0] == "projectBox") {
+                document.querySelector('.projectDisplay').classList.remove('hovered')
+            } else {
+                document.querySelector('.projectDisplay').classList.add('hovered')
+
+            }
+            // console.log(e.target.parentElement);
+            // if () {}
+            // if (e.target.localName == 'a' || e.target.parentElement.localName == 'a'|| e.parentElement.localName == 'div') {
+            // // console.log(document.querySelector('.projectDisplay'));
+            // // console.log(document.querySelector('.projectDisplay').classList);
+            //     document.querySelector('.projectDisplay').classList.add('hovered')
+            // } else {
+            //     document.querySelector('.projectDisplay').classList.remove('hovered')
+            //     console.log(e.target);
+            // }
+            // document.querySelector('.projectDisplay').classList.remove('hovered')
+            // if (e.target.parentElement.localName == 'a' || e.parentElement.localName == 'div') {
+            //     console.log('keep hover')
+            // } else {
+            //     console.log('remove hover');
+            // }
+        })
+    })
 };
 
 portfolio.init = () => {
