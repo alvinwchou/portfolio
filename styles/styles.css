@@ -547,7 +547,7 @@ span {
   right: 2vw;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  z-index: 90;
+  z-index: 80;
 }
 .sideNav li, .sideNav span {
   border-radius: 50%;
@@ -644,14 +644,12 @@ body {
 
 .myProjects {
   position: relative;
-  border: 1px solid yellow;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .myProjects .projectBackgroundContainer {
   position: absolute;
-  border: 1px solid red;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -662,23 +660,24 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0;
+  position: absolute;
+  top: 0;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: opacity 0s, -webkit-transform 0s;
-  transition: opacity 0s, -webkit-transform 0s;
-  transition: transform 0s, opacity 0s;
-  transition: transform 0s, opacity 0s, -webkit-transform 0s;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 .myProjects .projectBackgroundContainer .zoom {
-  opacity: 1;
+  opacity: 0.5;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-transition: opacity 0.5s 0.2s ease, -webkit-transform 5s 0.2s ease;
-  transition: opacity 0.5s 0.2s ease, -webkit-transform 5s 0.2s ease;
-  transition: transform 5s 0.2s ease, opacity 0.5s 0.2s ease;
-  transition: transform 5s 0.2s ease, opacity 0.5s 0.2s ease, -webkit-transform 5s 0.2s ease;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 5s ease;
+  transition: transform 5s ease, opacity 0.5s ease;
+  transition: transform 5s ease, opacity 0.5s ease, -webkit-transform 5s ease;
 }
 .myProjects .wrapper {
   z-index: 2;
