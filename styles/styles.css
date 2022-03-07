@@ -571,7 +571,6 @@ span {
 html {
   scroll-behavior: smooth;
   scrollbar-color: #f3ca2f #272727;
-  overflow: hidden;
 }
 
 body {

@@ -92,24 +92,49 @@ portfolio.eventListenerSetUp = () => {
                 document.querySelector('.projectDisplay').classList.add('hovered')
 
             }
-            // console.log(e.target.parentElement);
-            // if () {}
-            // if (e.target.localName == 'a' || e.target.parentElement.localName == 'a'|| e.parentElement.localName == 'div') {
-            // // console.log(document.querySelector('.projectDisplay'));
-            // // console.log(document.querySelector('.projectDisplay').classList);
-            //     document.querySelector('.projectDisplay').classList.add('hovered')
-            // } else {
-            //     document.querySelector('.projectDisplay').classList.remove('hovered')
-            //     console.log(e.target);
-            // }
-            // document.querySelector('.projectDisplay').classList.remove('hovered')
-            // if (e.target.parentElement.localName == 'a' || e.parentElement.localName == 'div') {
-            //     console.log('keep hover')
-            // } else {
-            //     console.log('remove hover');
-            // }
         })
     })
+
+
+    //TESTING OUT FULL PAGE SCROLL
+    // let delay = false; 
+    // document.querySelector('html').addEventListener('wheel', (e) => {
+        
+    //     if (delay == false) {
+    //         delay = true;
+    //         if (e.deltaY > 0) {
+    //             window.scrollBy(0, window.innerHeight);
+    //         } else {
+    //             window.scrollBy(0, -window.innerHeight);
+    //         }
+    //     }
+    //     // document.querySelector(class).scrollIntoView()
+    //     setTimeout( () => {delay = false}, 1500)
+    // })
+
+    // const pages = document.querySelectorAll('.pageScroll')
+    // pages.forEach( (page, index) => {
+    //     console.log(pages);
+    //     console.log(page, index);
+    //     console.log(`'#${pages[index].id}'`);
+    //     console.log(`'#resume'`);
+    //     page.addEventListener('wheel', (e) => {
+    //         if (e.deltaY > 0) {
+    //             // window.scrollBy(0, window.innerHeight)
+    //             console.log('down page');
+    //             console.log(`#${pages[index].id}`);
+    //             console.log(document.querySelector(`#${pages[index].id}`));
+    //             // console.log(document.querySelector('#resume'))
+    //             document.querySelector(`#${pages[index].id}`).scrollIntoView()
+    //             console.log(document.getElementById(`${pages[index].id}`))
+    //             const scrollToPage = document.getElementById(`${pages[index].id}`)
+    //             console.log(scrollToPage)
+    //             scrollToPage.scrollIntoView(true)
+    //         } else {
+    //             window.scrollBy(0, -window.innerHeight);
+    //         }
+    //     })
+    // })
 };
 
 portfolio.init = () => {
