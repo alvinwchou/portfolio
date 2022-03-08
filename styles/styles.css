@@ -571,7 +571,6 @@ span {
   margin: 0 auto;
 }
 
-/* _header.scss */
 /* _sections.scss */
 html {
   scroll-behavior: smooth;
@@ -647,7 +646,6 @@ body {
           justify-content: space-evenly;
 }
 .whatIDo .imgContainer {
-  border: 1px dotted white;
   max-width: 470px;
   height: 490px;
 }
@@ -875,7 +873,6 @@ footer .innerWrapper {
 
   .myProjects .featured {
     grid-template-columns: repeat(2, 1fr);
-    border: 1px solid red;
   }
   .myProjects .projectDisplay {
     display: none;
