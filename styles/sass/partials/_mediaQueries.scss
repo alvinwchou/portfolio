@@ -45,7 +45,6 @@
     .myProjects {
         .featured {
             grid-template-columns: repeat(2, 1fr);
-            border: 1px solid red;
         }
         .projectDisplay {
             display: none;
