@@ -441,7 +441,6 @@ span {
   background-color: #272727;
   position: fixed;
   top: 0;
-  right: 0;
   bottom: 0;
   z-index: 100;
   padding-left: 5%;
@@ -582,7 +581,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  padding-top: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -604,6 +602,8 @@ body {
   padding: 0 15px;
 }
 .introduction p {
+  color: #fff;
+  font-size: 0.8rem;
   padding-left: 0.25rem;
   margin-bottom: 1.7rem;
 }
@@ -618,10 +618,16 @@ body {
   margin-top: 10vh;
 }
 
+.whatIDo {
+  padding-top: 60px;
+}
 .whatIDo .aboutMe {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .whatIDo .textContainer, .whatIDo .imgContainer {
   width: 50%;
@@ -685,7 +691,7 @@ body {
 .myProjects .featured {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
 }
 .myProjects .projectBox, .myProjects .projectDisplay {
   padding: 30px 15px;
@@ -755,9 +761,9 @@ body {
 .resume .skills {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .resume li {
   width: 16.6666666667%;
@@ -814,7 +820,6 @@ body {
 }
 .contact button {
   background-color: #000;
-  width: 20%;
   padding: 1.1em 2.3em;
   margin: 0 15px;
   cursor: pointer;
@@ -823,4 +828,86 @@ body {
   background-color: #f3ca2f;
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
+}
+
+/* _mediaQueries.scss */
+@media (max-width: 1250px) {
+  .myProjects .featured {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 950px) {
+  .slideOutNav {
+    width: 50%;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .introduction .textContainer {
+    width: 100%;
+  }
+
+  .whatIDo .aboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .whatIDo .textContainer, .whatIDo .imgContainer {
+    width: 100%;
+  }
+  .whatIDo .imgContainer {
+    margin: 5rem 0;
+  }
+
+  .myProjects .featured {
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid red;
+  }
+  .myProjects .projectDisplay {
+    display: none;
+  }
+  .myProjects .textContainer p:nth-child(3) {
+    display: block;
+  }
+  .resume li {
+    width: 20%;
+  }
+}
+@media (max-width: 750px) {
+  .innerWrapper {
+    width: 100%;
+  }
+
+  .introduction, .whatIDo, .myProjects, .resume, .contact {
+    padding-top: 90px;
+  }
+
+  .navBar .socials {
+    display: none;
+  }
+
+  .slideOutNav {
+    right: -100%;
+    width: 100%;
+  }
+
+  .sideNav, .sidNav {
+    display: none;
+  }
+
+  .myProjects .featured {
+    grid-template-columns: 1fr;
+    border: 1px solid red;
+  }
+
+  .resume li {
+    width: 25%;
+  }
+
+  .contact .formName, .contact .formEmail {
+    width: 100%;
+  }
 }

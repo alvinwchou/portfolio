@@ -1,5 +1,6 @@
 /* nav.scss */
 
+// TOP NAV BAR
 .navBar {
     width: 100%;
     padding-top: 2rem;
@@ -52,17 +53,18 @@
             color: $primary;
             transition: color 0.7s ease-out;
         }
-
     }
 }
 
+
+// SLIDE OUT NAV
 .slideOutNav {
     // *{border: 1px solid red}
     width: 35%;
     background-color: $body;
     position: fixed;
     top: 0;
-    right: 0;
+    // right: 0;
     bottom: 0;
     z-index: 100;
     padding-left: 5%;
@@ -149,6 +151,8 @@
     width: 30px;
 }
 
+
+// SIDE NAV CIRCLES
 .sideNav {
     position: fixed;
     top: 50%;

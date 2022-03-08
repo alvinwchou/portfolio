@@ -1,0 +1,119 @@
+/* _mediaQueries.scss */
+
+@media (max-width: 1250px) {
+    // MY PROJECTS
+    .myProjects {
+        .featured {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+
+@media (max-width: 950px) {
+    // SLIDE OUT NAV
+    .slideOutNav {
+        width: 50%;
+    }
+    
+    // TITLES
+    .title {
+        display: none;
+    }
+    
+    // INTRODUCTION
+    .introduction {
+        .textContainer {
+            width: 100%;
+        }
+    }
+
+    // WHAT I DO
+    .whatIDo {
+        .aboutMe {
+            flex-direction: column;
+        }
+        .textContainer, .imgContainer {
+            width: 100%;
+        }
+        .imgContainer {
+            margin: 5rem 0;
+        }
+    }
+
+    // MY PROJECTS
+    .myProjects {
+        .featured {
+            grid-template-columns: repeat(2, 1fr);
+            border: 1px solid red;
+        }
+        .projectDisplay {
+            display: none;
+        }
+        .textContainer {
+            p:nth-child(3) {
+                display: block;
+            }
+        }
+        .projectBox {
+
+        }
+    }
+
+    // RESUME
+    .resume {
+        li {
+            width: 20%;
+        }
+    }
+}
+
+
+@media (max-width: 750px) {
+    .innerWrapper {
+        width: 100%;
+    }
+
+    .introduction, .whatIDo, .myProjects, .resume, .contact {
+        padding-top: 90px;
+    }
+
+    // TOP NAV BAR
+    .navBar {
+        .socials {
+            display: none;
+        }
+    }
+    // SLIDE OUT NAV
+    .slideOutNav {
+        right: -100%;
+        width: 100%;
+    }
+
+    //SIDE NAV
+    .sideNav, .sidNav {
+        display: none;
+    }
+
+    // MY PROJECTS
+    .myProjects {
+        .featured {
+            grid-template-columns: 1fr;
+            border: 1px solid red;
+        }
+    }
+
+    // RESUME
+    .resume {
+        li {
+            width: 25%;
+        }
+    }
+
+    // CONTACT
+    .contact {
+        .formName, .formEmail {
+            width: 100%;
+        }
+    }
+}
