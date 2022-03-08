@@ -1,5 +1,5 @@
 /* _setup.scss */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -905,7 +905,6 @@ footer .innerWrapper {
 
   .myProjects .featured {
     grid-template-columns: 1fr;
-    border: 1px solid red;
   }
 
   .resume li {
