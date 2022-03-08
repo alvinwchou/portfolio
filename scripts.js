@@ -19,7 +19,12 @@ portfolio.backgroundChanager = (number) => {
 
 portfolio.eventListenerSetUp = () => {
     // close slide out nav
+        // via 'x'
     document.querySelector('.slideOutNav button').addEventListener('click', () => {
+        document.querySelector('#openSidebarMenu').checked = false;
+    });
+    // via outside the slideOutNav
+    document.querySelector('.slideOutNavVWBg').addEventListener('click', () => {
         document.querySelector('#openSidebarMenu').checked = false;
     });
 

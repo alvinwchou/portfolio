@@ -415,10 +415,10 @@ span {
   opacity: 0;
   position: absolute;
 }
-.navBar input[type=checkbox]:checked ~ .slideOutNav {
+.navBar input[type=checkbox]:checked ~ .slideOutNavVWBg, .navBar input[type=checkbox]:checked ~ .slideOutNav {
   right: 0;
 }
-.navBar input[type=checkbox]:checked ~ .slideOutNav ul, .navBar input[type=checkbox]:checked ~ .slideOutNav .slideSocials, .navBar input[type=checkbox]:checked ~ .slideOutNav p {
+.navBar input[type=checkbox]:checked ~ .slideOutNavVWBg ul, .navBar input[type=checkbox]:checked ~ .slideOutNavVWBg .slideSocials, .navBar input[type=checkbox]:checked ~ .slideOutNavVWBg p, .navBar input[type=checkbox]:checked ~ .slideOutNav ul, .navBar input[type=checkbox]:checked ~ .slideOutNav .slideSocials, .navBar input[type=checkbox]:checked ~ .slideOutNav p {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
   opacity: 1;
@@ -442,11 +442,21 @@ span {
   transition: background-color 0.2s linear;
 }
 
+.slideOutNavVWBg {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 95;
+  right: -110%;
+}
+
 .slideOutNav {
   width: 35%;
   background-color: #272727;
   position: fixed;
   top: 0;
+  right: 0;
   bottom: 0;
   z-index: 100;
   padding-left: 5%;
@@ -490,7 +500,6 @@ span {
   top: 7rem;
   bottom: 8rem;
   overflow-y: auto;
-  opacity: 0;
   -webkit-transform: translateY(3rem);
           transform: translateY(3rem);
   -webkit-transition: opacity 0.5s 0.4s ease, -webkit-transform 0.5s 0.4s ease;
@@ -732,6 +741,7 @@ body {
   grid-column: 1/2;
   grid-row: 1/end;
   overflow: hidden;
+  height: 394.8px;
 }
 .myProjects .projectDisplay a {
   padding-bottom: 0;
