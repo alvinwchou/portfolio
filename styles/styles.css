@@ -436,6 +436,12 @@ span {
   transition: color 0.7s ease-out;
 }
 
+.scrollActive {
+  background-color: #272727;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
 .slideOutNav {
   width: 35%;
   background-color: #272727;

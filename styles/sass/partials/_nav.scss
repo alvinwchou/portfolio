@@ -56,6 +56,11 @@
     }
 }
 
+.scrollActive {
+    background-color: $body;
+    transition: background-color 0.2s linear;
+}
+
 
 // SLIDE OUT NAV
 .slideOutNav {

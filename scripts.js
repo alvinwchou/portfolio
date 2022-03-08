@@ -95,6 +95,10 @@ portfolio.eventListenerSetUp = () => {
         })
     })
 
+    // add background to nav after scroll
+    window.addEventListener('scroll', () => {
+        document.querySelector('.navBar').classList.toggle('scrollActive', window.scrollY > 0);
+    })
 
     //TESTING OUT FULL PAGE SCROLL
     // let delay = false; 
