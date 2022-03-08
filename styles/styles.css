@@ -584,6 +584,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 60px;
 }
 .introduction .wrapper, .whatIDo .wrapper, .myProjects .wrapper, .resume .wrapper, .contact .wrapper {
   -webkit-box-pack: justify;
@@ -618,9 +619,6 @@ body {
   margin-top: 10vh;
 }
 
-.whatIDo {
-  padding-top: 60px;
-}
 .whatIDo .aboutMe {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -828,6 +826,13 @@ body {
   background-color: #f3ca2f;
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
+}
+
+footer .wrapper {
+  padding: 2.5rem 0;
+}
+footer .innerWrapper {
+  padding: 0 15px;
 }
 
 /* _mediaQueries.scss */

@@ -17,6 +17,7 @@ body {
     display: flex;
     min-height: 100vh;
     align-items: center;
+    padding-top: 60px;
     .wrapper {
         justify-content: space-between;
     }
@@ -56,7 +57,6 @@ body {
 
 // WHAT I DO
 .whatIDo {
-    padding-top: 60px;
     .aboutMe {
         justify-content: space-between;
         align-items: center;
@@ -272,5 +272,16 @@ body {
             background-color: $primary;
             transition: background-color 0.3s ease-out;
         }
+    }
+}
+
+
+// FOOTER
+footer {
+    .wrapper {
+        padding: 2.5rem 0;
+    }
+    .innerWrapper {
+        padding: 0 15px;
     }
 }
