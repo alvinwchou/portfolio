@@ -105,7 +105,7 @@ portfolio.eventListenerSetUp = () => {
         document.querySelector('.navBar').classList.toggle('scrollActive', window.scrollY > 0);
     })
 
-    //TESTING OUT FULL PAGE SCROLL
+    // TESTING OUT FULL PAGE SCROLL
     // let delay = false; 
     // document.querySelector('html').addEventListener('wheel', (e) => {
         
@@ -121,29 +121,21 @@ portfolio.eventListenerSetUp = () => {
     //     setTimeout( () => {delay = false}, 1500)
     // })
 
-    // const pages = document.querySelectorAll('.pageScroll')
-    // pages.forEach( (page, index) => {
-    //     console.log(pages);
-    //     console.log(page, index);
-    //     console.log(`'#${pages[index].id}'`);
-    //     console.log(`'#resume'`);
-    //     page.addEventListener('wheel', (e) => {
-    //         if (e.deltaY > 0) {
-    //             // window.scrollBy(0, window.innerHeight)
-    //             console.log('down page');
-    //             console.log(`#${pages[index].id}`);
-    //             console.log(document.querySelector(`#${pages[index].id}`));
-    //             // console.log(document.querySelector('#resume'))
-    //             document.querySelector(`#${pages[index].id}`).scrollIntoView()
-    //             console.log(document.getElementById(`${pages[index].id}`))
-    //             const scrollToPage = document.getElementById(`${pages[index].id}`)
-    //             console.log(scrollToPage)
-    //             scrollToPage.scrollIntoView(true)
-    //         } else {
-    //             window.scrollBy(0, -window.innerHeight);
-    //         }
-    //     })
-    // })
+    const pages = document.querySelectorAll('.pageScroll')
+    pages.forEach( (page, index) => {
+        page.addEventListener('wheel', (e) => {
+            if (e.deltaY > 0 && index < pages.length - 1) {
+                console.log('down page');
+                const scrollToPage = document.getElementById(`${pages[index+1].id}`)
+                scrollToPage.scrollIntoView()
+            } else if (e.deltaY < 0 && index > 0) {
+                console.log(index );
+                document.getElementById(`${pages[index-1].id}`).scrollIntoView()
+            } else {
+                document.getElementById(`${pages[0].id}`).scrollIntoView()
+            }
+        })
+    })
 };
 
 portfolio.init = () => {
