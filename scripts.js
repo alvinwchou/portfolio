@@ -111,7 +111,7 @@ portfolio.eventListenerSetUp = () => {
         
     //     if (delay == false) {
     //         delay = true;
-    //         if (e.deltaY > 0) {
+    //         if (e.deltaY > 0) {g
     //             window.scrollBy(0, window.innerHeight);
     //         } else {
     //             window.scrollBy(0, -window.innerHeight);
