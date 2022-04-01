@@ -100,39 +100,25 @@ portfolio.eventListenerSetUp = () => {
         })
     })
 
-    // add background to nav after scroll
+    // add grey background to top nav bar after scrolling down
     window.addEventListener('scroll', () => {
+        console.log('scroll');
         document.querySelector('.navBar').classList.toggle('scrollActive', window.scrollY > 0);
     })
-
-    // TESTING OUT FULL PAGE SCROLL
-    // let delay = false; 
-    // document.querySelector('html').addEventListener('wheel', (e) => {
-        
-    //     if (delay == false) {
-    //         delay = true;
-    //         if (e.deltaY > 0) {g
-    //             window.scrollBy(0, window.innerHeight);
-    //         } else {
-    //             window.scrollBy(0, -window.innerHeight);
-    //         }
-    //     }
-    //     // document.querySelector(class).scrollIntoView()
-    //     setTimeout( () => {delay = false}, 1500)
-    // })
 
     const pages = document.querySelectorAll('.pageScroll')
     pages.forEach( (page, index) => {
         page.addEventListener('wheel', (e) => {
-            if (e.deltaY > 0 && index < pages.length - 1) {
-                console.log('down page');
-                const scrollToPage = document.getElementById(`${pages[index+1].id}`)
-                scrollToPage.scrollIntoView()
-            } else if (e.deltaY < 0 && index > 0) {
-                console.log(index );
-                document.getElementById(`${pages[index-1].id}`).scrollIntoView()
+            if (e.deltaY > 0) {
+                if (index === 4) {
+                    document.getElementById(`${pages[0].id}`).scrollIntoView()
+                } else {
+                    let scrollToPage = document.getElementById(`${pages[index+1].id}`)
+                    scrollToPage.scrollIntoView()
+                }
             } else {
-                document.getElementById(`${pages[0].id}`).scrollIntoView()
+                let scrollToPage = document.getElementById(`${pages[index - 1].id}`)
+                scrollToPage.scrollIntoView()
             }
         })
     })
