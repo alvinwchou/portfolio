@@ -393,7 +393,7 @@ span {
   margin-left: 200px;
 }
 .navBar .socials i {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 .navBar .socials i:hover, .navBar .socials i:focus {
@@ -428,7 +428,7 @@ span {
   float: right;
 }
 .navBar .menuBars i {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 .navBar .menuBars:hover i, .navBar .menuBars:focus i {
   color: #f3ca2f;
@@ -584,7 +584,6 @@ span {
 html {
   scroll-behavior: smooth;
   scrollbar-color: #f3ca2f #272727;
-  overflow: hidden;
 }
 
 body {
@@ -654,6 +653,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 1.5rem;
 }
 .whatIDo .imgContainer {
   max-width: 470px;

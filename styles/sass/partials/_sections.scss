@@ -3,7 +3,7 @@
 html { 
     scroll-behavior: smooth;
     scrollbar-color: $primary $body;
-    overflow: hidden;
+    // overflow: hidden;
     // overflow-y: auto;
 }
 
@@ -21,7 +21,7 @@ body {
     .wrapper {
         justify-content: space-between;
     }
-
+    // overflow: hidden;
     // * {border: 1px solid red}
 }
 
@@ -68,10 +68,10 @@ body {
     .textContainer {
         flex-direction: column;
         justify-content: space-evenly;
+        margin-bottom: 1.5rem;
     }
 
     .imgContainer {
-        // border: 1px dotted white;
         max-width: 470px;
         height: 490px;
     }
