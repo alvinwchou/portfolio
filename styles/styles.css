@@ -771,6 +771,57 @@ body {
   color: #7e7e7e;
 }
 
+.myProjects2 .innerWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.myProjects2 .carousel {
+  width: 100%;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.myProjects2 .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 600%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.myProjects2 .slider div {
+  -ms-flex-preferred-size: 16.6666666667%;
+      flex-basis: 16.6666666667%;
+  width: 16.6666666667%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  width: 80%;
+}
+.myProjects2 .arrow {
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+}
+.myProjects2 .prev.arrow {
+  left: 10px;
+}
+.myProjects2 .next.arrow {
+  right: 10px;
+}
+
 .resume .skills {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

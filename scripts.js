@@ -76,8 +76,48 @@ portfolio.eventListenerSetUp = () => {
     // })
 };
 
+portfolio.carousel = () => {
+    const carousel = document.querySelector('.carousel')
+    const slider = document.querySelector('.slider')
+    const prev = document.querySelector('.prev')
+    const next = document.querySelector('.next')
+
+
+    let direction;
+
+    prev.addEventListener('click', () => {
+        if (direction == -1) {
+            slider.appendChild(slider.firstElementChild)
+            direction = 1;
+        }
+        carousel.style.justifyContent = 'flex-end';
+        slider.style.transform = `translate(calc(100%/6))`; // $projects
+    })
+
+    next.addEventListener('click', () => {
+        direction = -1;
+        carousel.style.justifyContent = 'flex-start';
+        slider.style.transform = `translate(calc(100%/-6))`; // $projects
+    })
+    slider.addEventListener('transitionend', () => {
+        if (direction == -1) {
+            slider.appendChild(slider.firstElementChild)
+        } else {
+            slider.prepend(slider.lastElementChild)
+
+        }
+
+        slider.style.transition = 'none'
+        slider.style.transform = 'translate(0)'
+        setTimeout(() => {
+            slider.style.transition = 'all 0.5s'
+        })
+    })
+}
+
 portfolio.init = () => {
     portfolio.eventListenerSetUp()
+    portfolio.carousel()
 };
 
 portfolio.init();
