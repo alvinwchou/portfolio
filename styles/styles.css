@@ -661,122 +661,19 @@ body {
 }
 
 .myProjects {
-  position: relative;
+  background-image: url("../assets/wallpaperflare.com_wallpaper.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
 }
-.myProjects .projectBackgroundContainer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  top: 0;
-}
-.myProjects .projectBackgroundContainer .projectBackground {
-  background-image: url("../assets/project-bg3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-}
-.myProjects .projectBackgroundContainer .zoom {
-  opacity: 0.5;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: opacity 0.5s ease, -webkit-transform 5s ease;
-  transition: opacity 0.5s ease, -webkit-transform 5s ease;
-  transition: transform 5s ease, opacity 0.5s ease;
-  transition: transform 5s ease, opacity 0.5s ease, -webkit-transform 5s ease;
-}
-.myProjects .wrapper {
-  z-index: 2;
-}
-.myProjects .featured {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-.myProjects .projectBox, .myProjects .projectDisplay {
-  padding: 30px 15px;
-  margin-top: 0px;
-}
-.myProjects a {
-  display: block;
-  position: relative;
-  padding-bottom: 75%;
-  border: 1px solid #fff;
-}
-.myProjects a:hover, .myProjects a:focus {
-  border: 1px solid #f3ca2f;
-  background-color: #f3ca2f;
-  -webkit-transition: background-color 0.3s ease-out;
-  transition: background-color 0.3s ease-out;
-}
-.myProjects a:hover h4, .myProjects a:focus h4 {
-  color: #000;
-}
-.myProjects a:hover p, .myProjects a:focus p {
-  color: #7e7e7e;
-}
-.myProjects .textContainer {
-  position: absolute;
-  padding: 2rem 1.5rem;
-}
-.myProjects .textContainer p {
-  color: #cccccc;
-  margin-top: 0.5rem;
-}
-.myProjects .textContainer p:nth-child(3) {
-  display: none;
-}
-.myProjects .projectDisplay {
-  grid-column: 1/2;
-  grid-row: 1/end;
-  overflow: hidden;
-  height: 394.8px;
-}
-.myProjects .projectDisplay a {
-  padding-bottom: 0;
-  height: 100%;
-  overflow-y: auto;
-}
-.myProjects .projectDisplay .textContainer {
-  position: relative;
-}
-.myProjects .projectDisplay .textContainer p {
-  display: block;
-}
-.myProjects .projectDisplay span {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #fff;
-}
-.myProjects .hovered a {
-  background-color: #f3ca2f;
-}
-.myProjects .hovered h4 {
-  color: #000;
-}
-.myProjects .hovered p {
-  color: #7e7e7e;
-}
-
-.myProjects2 .innerWrapper {
+.myProjects .innerWrapper {
   width: 80%;
   margin: 0 auto;
 }
-.myProjects2 .carousel {
+.myProjects .carousel {
   width: 100%;
+  height: 400px;
+  padding-top: 1rem;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,7 +684,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-.myProjects2 .slider {
+.myProjects .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,7 +695,7 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.myProjects2 .slider div {
+.myProjects .slider div {
   -ms-flex-preferred-size: 16.6666666667%;
       flex-basis: 16.6666666667%;
   width: 16.6666666667%;
@@ -810,15 +707,26 @@ body {
   text-align: center;
   width: 80%;
 }
-.myProjects2 .arrow {
-  position: absolute;
-  top: 10px;
-  cursor: pointer;
+.myProjects a {
+  color: #FFF;
+  margin: 0 1rem;
 }
-.myProjects2 .prev.arrow {
+.myProjects a:hover, .myProjects a:focus {
+  color: #f3ca2f;
+}
+.myProjects .arrow {
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+  color: #FFF;
+}
+.myProjects .arrow:hover, .myProjects .arrow:focus {
+  color: #f3ca2f;
+}
+.myProjects .prev.arrow {
   left: 10px;
 }
-.myProjects2 .next.arrow {
+.myProjects .next.arrow {
   right: 10px;
 }
 
@@ -895,7 +803,7 @@ body {
 }
 
 footer .wrapper {
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
 }
 footer .innerWrapper {
   padding: 0 15px;

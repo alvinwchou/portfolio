@@ -78,138 +78,142 @@ body {
 }
 
 
-// MY PROJECTS
-.myProjects {
-    position: relative;
-    .projectBackgroundContainer {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        top: 0;
-        .projectBackground {
-            background-image: url('../assets/project-bg3.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            position: absolute;
-            top: 0;
-            transform: scale(1);
-            transition: all 0.1s linear;
-        }
-        .zoom {
-            opacity: 0.5;
-            transform: scale(1.05);
-            transition: transform 5s ease, opacity 0.5s ease;
-            // transition: all 5s ease;
-        }
-    }
-    // &:before {
-    //     content: "";
-    //     position: absolute;
-    //     width: 50%;
-    //     height: 100%;
-    //     top: 0;
-    //     background-color: purple;
-    // background-image: url('../assets/project-bg3.jpg');
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
+// // MY PROJECTS
+// .myProjects {
+//     position: relative;
+//     .projectBackgroundContainer {
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         overflow: hidden;
+//         top: 0;
+//         .projectBackground {
+//             background-image: url('../assets/project-bg3.jpg');
+//             background-repeat: no-repeat;
+//             background-position: center;
+//             background-size: cover;
+//             width: 100%;
+//             height: 100%;
+//             opacity: 0;
+//             position: absolute;
+//             top: 0;
+//             transform: scale(1);
+//             transition: all 0.1s linear;
+//         }
+//         .zoom {
+//             opacity: 0.5;
+//             transform: scale(1.05);
+//             transition: transform 5s ease, opacity 0.5s ease;
+//             // transition: all 5s ease;
+//         }
+//     }
+//     // &:before {
+//     //     content: "";
+//     //     position: absolute;
+//     //     width: 50%;
+//     //     height: 100%;
+//     //     top: 0;
+//     //     background-color: purple;
+//     // background-image: url('../assets/project-bg3.jpg');
+//     // background-repeat: no-repeat;
+//     // background-position: center;
+//     // background-size: cover;
 
     
-    // background-image: url('../assets/project-bg3.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    .wrapper {
-        z-index: 2;
-    }
-    .featured {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-    .projectBox, .projectDisplay {
-        padding: 30px 15px;
-        margin-top: 0px;
-    }
-    a {
-        display: block;
-        position: relative;
-        padding-bottom: 75%;
-        border: 1px solid $solidWhite;
-        // background-color: $body;
-        &:hover,
-        &:focus {
-            border: 1px solid $primary;
-            background-color: $primary;
-            transition: background-color 0.3s ease-out;
-            h4 {
-                color: #000;
-            }
-            p {
-                color: $secondary;
-            }
-        }
-    }
-    .textContainer {
-        position: absolute;
-        padding: 2rem 1.5rem;
-        p {
-            color: #cccccc;
-            margin-top: 0.5rem;
-        }
-        p:nth-child(3){
-            display: none;
-        }
-    }
-    .projectDisplay {
-        grid-column: 1 / 2;
-        grid-row: 1 / end;
-        overflow: hidden;
-        height: 394.8px;
-        a {
-            padding-bottom: 0;
-            height: 100%;
-            overflow-y: auto;
-            // margin-bottom: auto;
+//     // background-image: url('../assets/project-bg3.jpg');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     .wrapper {
+//         z-index: 2;
+//     }
+//     .featured {
+//         display: grid;
+//         grid-template-columns: repeat(4, 1fr);
+//         grid-template-rows: repeat(2, 1fr);
+//     }
+//     .projectBox, .projectDisplay {
+//         padding: 30px 15px;
+//         margin-top: 0px;
+//     }
+//     a {
+//         display: block;
+//         position: relative;
+//         padding-bottom: 75%;
+//         border: 1px solid $solidWhite;
+//         // background-color: $body;
+//         &:hover,
+//         &:focus {
+//             border: 1px solid $primary;
+//             background-color: $primary;
+//             transition: background-color 0.3s ease-out;
+//             h4 {
+//                 color: #000;
+//             }
+//             p {
+//                 color: $secondary;
+//             }
+//         }
+//     }
+//     .textContainer {
+//         position: absolute;
+//         padding: 2rem 1.5rem;
+//         p {
+//             color: #cccccc;
+//             margin-top: 0.5rem;
+//         }
+//         p:nth-child(3){
+//             display: none;
+//         }
+//     }
+//     .projectDisplay {
+//         grid-column: 1 / 2;
+//         grid-row: 1 / end;
+//         overflow: hidden;
+//         height: 394.8px;
+//         a {
+//             padding-bottom: 0;
+//             height: 100%;
+//             overflow-y: auto;
+//             // margin-bottom: auto;
             
-        }
-        .textContainer {
-            position: relative;
-            p {
-                // color: $secondary;
-                display: block;
-            }
-        }
-        span {
-            display: block;
-            width: 100%;
-            height: 100%;
-            border: 1px solid $solidWhite;
-        }
-    }
-    .hovered {
-        a {
-            background-color: $primary;
-        }
-        h4 {
-            color: #000;
-        }
-        p {
-            color: $secondary;
-        }
-    }
-}
+//         }
+//         .textContainer {
+//             position: relative;
+//             p {
+//                 // color: $secondary;
+//                 display: block;
+//             }
+//         }
+//         span {
+//             display: block;
+//             width: 100%;
+//             height: 100%;
+//             border: 1px solid $solidWhite;
+//         }
+//     }
+//     .hovered {
+//         a {
+//             background-color: $primary;
+//         }
+//         h4 {
+//             color: #000;
+//         }
+//         p {
+//             color: $secondary;
+//         }
+//     }
+// }
 
 // MY PROJECT
 $projects: 6;
 
-.myProjects2 {
+.myProjects {
     // background-color: blue;
+    background-image: url('../assets/wallpaperflare.com_wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
     // color: blue;
     // display: none
     .innerWrapper {
@@ -219,6 +223,8 @@ $projects: 6;
     }
     .carousel {
         width: 100%;
+        height: 400px;
+        padding-top: 1rem;
         // border: 2px solid orange;
         border-radius: 5px;
         display: flex;
@@ -247,10 +253,24 @@ $projects: 6;
         width: 80%;
     }
 
+    a {
+        color: #FFF;
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+        margin: 0 1rem;
+    }
+
     .arrow {
         position: absolute;
-        top: 10px;
+        bottom: 10px;
         cursor: pointer;
+        color: #FFF;
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
     }
     .prev.arrow {
         left: 10px;
@@ -334,7 +354,7 @@ $projects: 6;
 // FOOTER
 footer {
     .wrapper {
-        padding: 2.5rem 0;
+        padding: 1.5rem 0;
     }
     .innerWrapper {
         padding: 0 15px;

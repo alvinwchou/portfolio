@@ -1,12 +1,12 @@
 const portfolio = {};
 
-portfolio.backgroundChanager = (number) => {
-    const projectBackgrounds = document.querySelectorAll('.projectBackground')
-    projectBackgrounds.forEach( (projectBackground) => {
-        projectBackground.classList.remove('zoom')
-    })
-    projectBackgrounds[number].classList.add('zoom')
-}
+// portfolio.backgroundChanager = (number) => {
+//     const projectBackgrounds = document.querySelectorAll('.projectBackground')
+//     projectBackgrounds.forEach( (projectBackground) => {
+//         projectBackground.classList.remove('zoom')
+//     })
+//     projectBackgrounds[number].classList.add('zoom')
+// }
 
 
 portfolio.eventListenerSetUp = () => {
@@ -99,6 +99,7 @@ portfolio.carousel = () => {
         carousel.style.justifyContent = 'flex-start';
         slider.style.transform = `translate(calc(100%/-6))`; // $projects
     })
+
     slider.addEventListener('transitionend', () => {
         if (direction == -1) {
             slider.appendChild(slider.firstElementChild)
