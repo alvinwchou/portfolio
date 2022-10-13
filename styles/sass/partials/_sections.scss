@@ -28,7 +28,7 @@ body {
 
 // INTRODUCTION
 .introduction {
-    background-image: url('../assets/intro-background2.jpg');
+    background-image: url('../../assets/intro-background2.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -88,7 +88,7 @@ body {
 //         overflow: hidden;
 //         top: 0;
 //         .projectBackground {
-//             background-image: url('../assets/project-bg3.jpg');
+//             background-image: url('../../assets/project-bg3.jpg');
 //             background-repeat: no-repeat;
 //             background-position: center;
 //             background-size: cover;
@@ -114,13 +114,13 @@ body {
 //     //     height: 100%;
 //     //     top: 0;
 //     //     background-color: purple;
-//     // background-image: url('../assets/project-bg3.jpg');
+//     // background-image: url('../../assets/project-bg3.jpg');
 //     // background-repeat: no-repeat;
 //     // background-position: center;
 //     // background-size: cover;
 
     
-//     // background-image: url('../assets/project-bg3.jpg');
+//     // background-image: url('../../assets/project-bg3.jpg');
 //     background-repeat: no-repeat;
 //     background-position: center;
 //     background-size: cover;
@@ -206,11 +206,11 @@ body {
 // }
 
 // MY PROJECT
-$projects: 6;
+$projects: 8;
 
 .myProjects {
     // background-color: blue;
-    background-image: url('../assets/wallpaperflare.com_wallpaper.jpg');
+    background-image: url('../../assets/wallpaperflare.com_wallpaper.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -283,7 +283,7 @@ $projects: 6;
 
 // RESUME
 .resume {
-    // background-image: url('../assets/skills-background2.jpg');
+    // background-image: url('../../assets/skills-background2.jpg');
     // background-repeat: no-repeat;
     // background-position: top center;
     .skills {

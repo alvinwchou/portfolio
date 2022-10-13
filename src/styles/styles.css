@@ -276,6 +276,10 @@ p {
   letter-spacing: 0.1em;
 }
 
+.slider p {
+  font-size: 1rem;
+}
+
 .logo {
   color: #fff;
   font-size: 1.5rem;
@@ -607,7 +611,7 @@ body {
 }
 
 .introduction {
-  background-image: url("../assets/intro-background2.jpg");
+  background-image: url("../../assets/intro-background2.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -661,7 +665,7 @@ body {
 }
 
 .myProjects {
-  background-image: url("../assets/wallpaperflare.com_wallpaper.jpg");
+  background-image: url("../../assets/wallpaperflare.com_wallpaper.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -689,16 +693,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  width: 600%;
+  width: 800%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .myProjects .slider div {
-  -ms-flex-preferred-size: 16.6666666667%;
-      flex-basis: 16.6666666667%;
-  width: 16.6666666667%;
+  -ms-flex-preferred-size: 12.5%;
+      flex-basis: 12.5%;
+  width: 12.5%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 1;
@@ -819,15 +823,12 @@ footer .innerWrapper {
   .slideOutNav {
     width: 50%;
   }
-
   .title {
     display: none;
   }
-
   .introduction .textContainer {
     width: 100%;
   }
-
   .whatIDo .aboutMe {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -840,7 +841,6 @@ footer .innerWrapper {
   .whatIDo .imgContainer {
     margin: 5rem 0;
   }
-
   .myProjects .featured {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -858,32 +858,25 @@ footer .innerWrapper {
   .innerWrapper {
     width: 100%;
   }
-
   .introduction, .whatIDo, .myProjects, .resume, .contact {
     padding-top: 90px;
   }
-
   .navBar .socials {
     display: none;
   }
-
   .slideOutNav {
     right: -100%;
     width: 100%;
   }
-
   .sideNav, .sidNav {
     display: none;
   }
-
   .myProjects .featured {
     grid-template-columns: 1fr;
   }
-
   .resume li {
     width: 25%;
   }
-
   .contact .formName, .contact .formEmail {
     width: 100%;
   }
