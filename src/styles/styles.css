@@ -693,7 +693,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  width: 800%;
+  width: 200%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-transition: all 0.5s;
